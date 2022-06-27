@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="backRu">Назад</string>
+
+    <string name="buttonBackToMain">В главное меню</string>
+
+    <string name="buttonEnterRu">Авторизоваться</string>
+
+    <string name="textCreateAccountRu">Ещё нет аккаунта ? зарегистироваться</string>
+
+    <string name="textRegistrationRu">Регистрация</string>
+
+    <string name="emailRu">Электронная почта</string>
+
+    <string name="passwordRu">Пароль</string>
+
+    <string name="repeatPasswordRu">Повторите пароль</string>
+
+    <string name="buttonRegistrationRu">Зарегистрироваться</string>
+
+    <string name="buttonApplyEditRu">Принять изменения</string>
+
+    <string name="buttonCreateTaskRu">Создать</string>
+
+    <string name="buttonDeleteRu">Удалить</string>
+
+    <string name="buttonChangeRu">Потвердить редактирование</string>
+
+    <string name="buttonEditTimeRu">Изменить время</string>
+
+    <string name="buttonReconnectRu">Переподключиться</string>
+
+    <string name="nameReconnectToServerRu">Возобновляем подключение к серверу</string>
+
+    <string name="nameNotAccessToServerRu">Доступ к серверу отсутствует, для переподключения нажмите на кнопку</string>
+
+    <string name="spinnerTextRu">Take sort task</string>
+
+    <string name="nameSortItemRu">Отобразить...</string>
+
+    <string name="itemSubNameTaskAllRu">Все задачи</string>
+
+    <string name="itemSubNameTodayTaskRu">Задачи на сегодня</string>
+
+    <string name="itemSubNameTomorrowTaskRu">Задачи на завтра</string>
+
+    <string name="itemSubNameWeekTaskRu">Задачи на эту неделю</string>
+
+    <string name="itemSubNameMonthTaskRu">Задачи на следующий месяц</string>
+
+    <string name="nameMondayRu">Пон</string>
+
+    <string name="nameTuesdayRu">Вт</string>
+    
+    <string name="nameWednesdayRu">Ср</string>
+
+    <string name="nameThursdayRu">Чет</string>
+
+    <string name="nameFridayRu">Пят</string>
+
+    <string name="nameSaturdayRu">Суб</string>
+
+    <string name="nameSundayRu">Вос</string>
+
+    <string name="nameCurrentDateEndTimeRu">Время окончания</string>
+
+    <string name="nameCurrentNameTaskRu">Название</string>
+
+    <string name="nameCurrentDescriptionTaskRu">Описание</string>
+
+    <string name="nameCurrentDateEnd">Дата окончания</string>
+
+    <string name="nameHintCurrentNameTaskRu">Изменить название</string>
+
+    <string name="nameHintCurrentDescriptionTaskRu">Изменить описание</string>
+
+    <string name="nameHintCurrentDateEndTaskRu">Изменить дату</string>
+
+    <string name="nameHintCurrentHourEndTaskRu">Изменить время</string>
+
+    <string name="nameTextCountTaskViewRu">Количество заданий</string>
+
+    <string name="nameTextCountDoneTaskViewRu">Сделанные</string>
+
+    <string name="nameTextCountLateDateTaskViewRu">Задания с истекшим сроком</string>
+
+    <string name="nameTextCountNotLateDateTaskViewRu">Задания с не истёкшим сроком</string>
+
+    <string name="hintNameTaskRu">Название задачи</string>
+
+    <string name="hintDescriptionTaskRu">Описание задачи</string>
+
+    <string name="hintTimeTaskRu">Дата</string>
+
+    <string name="hintDateTaskRu">Время</string>
+
+    <string name="buttonAddTaskRu">Создать</string>
+
+    <string name="buttonExitApp">Закрыть приложение</string>
+
+    <string name="itemSeeStatisticsRu">Статистика эффективности</string>
+
+    <string name="buttonSendVeryficationRu">Отправить код</string>
+
+</resources>

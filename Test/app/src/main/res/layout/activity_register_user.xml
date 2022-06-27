@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivitySignInUp.Registration">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingTop="40dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40dp"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:text="@string/textRegistrationRu" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/icon_registration"/>
+
+        <EditText
+            android:id="@+id/enterEmailUser"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:hint="@string/emailRu"
+            android:inputType="textPersonName"
+            android:paddingHorizontal="10dp"
+            android:textColor="#5D5C61"
+            android:textSize="20dp" />
+
+
+        <EditText
+            android:id="@+id/enterPasswordUser"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:hint="@string/passwordRu"
+            android:inputType="textPassword"
+            android:paddingHorizontal="10dp"
+            android:textColor="#5D5C61"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/enterPasswordRepeat"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:hint="@string/repeatPasswordRu"
+            android:inputType="textPassword"
+            android:paddingHorizontal="10dp"
+            android:textColor="#5D5C61"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#557A95"
+            android:fontFamily="@font/inter"
+            android:onClick="RegisterUser"
+            android:text="@string/buttonRegistrationRu"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="22dp"
+            app:cornerRadius="8dp" />
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/border_no_gradient"
+            app:backgroundTint="@null"
+            android:fontFamily="@font/inter"
+            android:onClick="backToMainActivity"
+            android:text="@string/backRu"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#5D5C61"
+            android:textSize="22dp"
+            app:cornerRadius="8dp" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.androidex1.MainActivity">
+
+
+    <item
+        android:id="@+id/itemAddTask"
+        android:icon="@drawable/add_picture"
+        android:title="Add task"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/itemStaticSee"
+        android:title="@string/itemSeeStatisticsRu" />
+
+    <item
+        android:id="@+id/SelectTask"
+        android:title="@string/nameSortItemRu">
+
+        <menu>
+            <item
+                android:id="@+id/allTasks"
+                android:title="@string/itemSubNameTaskAllRu"
+                />
+            <item
+                android:title="@string/itemSubNameTodayTaskRu"
+                android:id="@+id/TodayTasks"
+                />
+            <item
+                android:id="@+id/TomorrowTasks"
+                android:title="@string/itemSubNameTomorrowTaskRu"
+                />
+            <item
+                android:id="@+id/WeekTasks"
+                android:title="@string/itemSubNameWeekTaskRu"
+                />
+            <item
+                android:id="@+id/MothTasks"
+                android:title="@string/itemSubNameMonthTaskRu"
+                />
+        </menu>
+    </item>
+
+</menu>

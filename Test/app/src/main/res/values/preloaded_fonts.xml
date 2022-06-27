@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/abeezee</item>
+        <item>@font/actor</item>
+        <item>@font/advent_pro_medium</item>
+        <item>@font/alef</item>
+        <item>@font/alegreya</item>
+        <item>@font/aleo</item>
+        <item>@font/alice</item>
+        <item>@font/alike</item>
+        <item>@font/antic_slab</item>
+        <item>@font/average</item>
+        <item>@font/average_sans</item>
+        <item>@font/inter</item>
+        <item>@font/inter_extralight</item>
+        <item>@font/inter_medium</item>
+        <item>@font/titillium_web_extralight</item>
+        <item>@font/viga</item>
+    </array>
+</resources>

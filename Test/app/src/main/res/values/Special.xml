@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id_ex" translatable="false">304622538176-gm17rq7a57efldu7pa8jkfdmsa2l1fv0.apps.googleusercontent.com</string>
+    <string name="channel_name">TestName</string>
+    <string name="channel_desc">TestDescription</string>
+</resources>

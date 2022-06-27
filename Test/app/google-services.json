@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "304622538176",
+    "firebase_url": "https://mik-project-339510-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "mik-project-339510",
+    "storage_bucket": "mik-project-339510.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304622538176:android:fbb9ca0d88aaeaf6e60c25",
+        "android_client_info": {
+          "package_name": "com.example.test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "304622538176-gm17rq7a57efldu7pa8jkfdmsa2l1fv0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCibhj04V1zj8FZUHTLG2sWxtR7QHYKtLc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "304622538176-gm17rq7a57efldu7pa8jkfdmsa2l1fv0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

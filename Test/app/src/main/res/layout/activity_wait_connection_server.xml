@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WaitConnectionServer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        android:paddingHorizontal="10dp">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Нет доступа к серверу"
+            android:textSize="35dp"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:layout_marginBottom="125dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="21dp"
+            android:layout_marginBottom="30dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:text="@string/nameNotAccessToServerRu" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/GifLoadConnectToServer"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/loading"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/TextViewTryReconnectToServer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:text="@string/nameReconnectToServerRu"
+            android:layout_marginBottom="30dp"/>
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/buttonReconnectRu"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="20dp"
+            android:backgroundTint="#557A95"
+            android:fontFamily="@font/inter"
+            android:onClick="recconectToServerClick"
+            />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:text="@string/buttonExitApp"
+            android:layout_height="60dp"
+            android:background="@drawable/border_no_gradient"
+            android:fontFamily="@font/inter"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#5D5C61"
+            android:layout_marginTop="70dp"
+            android:textSize="20dp"
+            app:backgroundTint="@null" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
