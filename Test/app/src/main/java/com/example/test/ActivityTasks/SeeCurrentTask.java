@@ -28,6 +28,15 @@ import com.example.test.ActivityMain.Main;
 import com.example.test.R;
 import com.example.test.Task.Tasks;
 
+
+/**
+ *
+ * Данный экран отвечает за просмотр данного таска который пользователь выбрал
+ *
+ * @author MIK
+ *
+ */
+
 public class SeeCurrentTask extends AppCompatActivity {
 
 

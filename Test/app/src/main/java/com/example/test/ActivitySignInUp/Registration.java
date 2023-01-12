@@ -13,6 +13,14 @@ import com.example.test.Client.Client;
 import com.example.test.R;
 
 
+/***
+ *
+ * Экран регистраций пользователя чтобы он потом смог зайти в данное приложение.
+ *
+ * @author MIK
+ *
+ */
+
 public class Registration extends AppCompatActivity {
 
     private EditText enterPasswordRepeat,enterPasswordUser,enterEmailUser;
@@ -27,6 +35,10 @@ public class Registration extends AppCompatActivity {
         init();
     }
 
+    /**
+     * Иницилизация кнопок и прочего
+     */
+
     private void init()
     {
         enterPasswordRepeat = findViewById(R.id.enterPasswordRepeat);
@@ -34,6 +46,12 @@ public class Registration extends AppCompatActivity {
         enterEmailUser = findViewById(R.id.enterEmailUser);
     }
 
+    /**
+     *
+     *  В идеале тут этого не должно быть, в идеале я должен был создать какой нибудь класс
+     *  чтобы он взаимодействовал с данными и передавал всё это в Веб Сокет.
+     *  то есть почта и пароль должен быть отправлен серваку чтобы он его закинул и после этого закинуть ему на почту которую он указал 6 значный код который система придумала.
+     */
     private void Reg(String Email, String Password)
     {
         User.CreateAction("action","REG_ACC");
@@ -53,6 +71,12 @@ public class Registration extends AppCompatActivity {
         }
     }
 
+
+    /**
+     *
+     * Здесь происходит регистрация юзера
+     *
+     */
 
     public void RegisterUser(View view)
     {

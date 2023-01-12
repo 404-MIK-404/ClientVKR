@@ -10,9 +10,15 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.test.ActivityMain.Main;
-import com.example.test.ActivitySignInUp.Registration;
 import com.example.test.Client.Client;
 
+
+/**
+ *
+ * Здесь пользователь оказывается на экране верификаций по его почте должен прийти 6 значный код и он должен был ввести и если норм проходил дальше.
+ * Пользователь оказываетесь тут если он первый раз заходит в данное приложение
+ *
+ */
 public class Verification extends AppCompatActivity {
 
     private EditText editTextNumberPassword;

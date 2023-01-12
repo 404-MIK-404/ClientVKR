@@ -12,7 +12,11 @@ import com.example.test.ActivitySignInUp.SignIn;
 import com.example.test.Client.Client;
 
 
-
+/**
+ *
+ * Данный экран служит тем, что если произойдёт разрыв соеднинения между серваком и клиентом, то пользователя перекинут на этот экран.
+ *
+ */
 import pl.droidsonroids.gif.GifImageView;
 
 public class WaitConnectionServer extends AppCompatActivity {

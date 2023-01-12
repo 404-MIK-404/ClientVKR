@@ -26,7 +26,13 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
 
-
+/**
+ *
+ * Это экран отвечает за создание самого таска как я помню
+ *
+ * @author MIK
+ *
+ */
 public class CreateTask extends AppCompatActivity{
 
     private Button BackButton,CreateBt,ButtonAddTask;

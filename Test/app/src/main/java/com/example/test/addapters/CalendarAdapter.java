@@ -22,6 +22,13 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 
+/**
+ *
+ * Здесь идёт адаптер отображения календаря он был сделан с помощью RecyclerView как я помню
+ *
+ * @author MIK
+ *
+ */
 public class CalendarAdapter extends RecyclerView.Adapter<CalendarViewHolder> {
 
     private final ArrayList<String> daysOfMonth;

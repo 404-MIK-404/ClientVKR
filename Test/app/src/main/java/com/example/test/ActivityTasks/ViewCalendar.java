@@ -26,6 +26,14 @@ import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 
+/**
+ *
+ * Это экран отвечает за то чтобы можно было посмотреть задачки через календарь который я создавал руками.
+ *
+ * @author MIK
+ *
+ */
+
 public class ViewCalendar extends AppCompatActivity implements CalendarAdapter.onItemListener {
 
     private TextView monthYearText,TextDate;

@@ -14,13 +14,11 @@ import android.widget.*;
 import com.example.test.ActivityMain.Main;
 import com.example.test.Client.Client;
 import com.example.test.R;
-import com.example.test.Services.SynchroCalendarClass;
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.*;
 import com.google.android.gms.common.*;
 import com.google.android.gms.common.api.*;
 import com.google.android.gms.tasks.Task;
-import java.net.URISyntaxException;
 
 public class SignIn extends AppCompatActivity implements GoogleApiClient.OnConnectionFailedListener {
 
@@ -43,7 +41,11 @@ public class SignIn extends AppCompatActivity implements GoogleApiClient.OnConne
     }
 
 
-
+    /**
+     *
+     * Здесь идёт иницилизация гугл сервиса как я помню.
+     *
+     */
     private void initGoogle(){
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(getString(R.string.default_web_client_id_ex))
@@ -123,6 +125,12 @@ public class SignIn extends AppCompatActivity implements GoogleApiClient.OnConne
         startActivity(intent);
     }
 
+
+    /**
+     *
+     * Здесь идёт создание гугл кнопки, почему то я не мог менять размер и что то ещё с ним сделать пришлось это программно делать
+     *
+     */
     private void setGooglePlusButtonText(SignInButton signInButton, String buttonText) {
         for (int i = 0; i < signInButton.getChildCount(); i++) {
             View v = signInButton.getChildAt(i);

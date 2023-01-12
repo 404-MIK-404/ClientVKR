@@ -26,6 +26,15 @@ import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 
+/**
+ *
+ * Главное меню самой программы, она должна отображать все задачи которые были созданы пользователем
+ * Уххх тут много чего можно сказать, но тут на мной взгляд многие вещи надо переписывать.
+ *
+ * @author MIK
+ *
+ */
+
 
 public class Main extends AppCompatActivity {
 
@@ -49,6 +58,14 @@ public class Main extends AppCompatActivity {
         getSupportActionBar().hide();
         init();
     }
+
+
+    /**
+     *
+     * На мой взгляд эти три функций можно как то получше написать, вот прям уверен на все 100
+     * Данные функций отвечают за отображений задачи за завтрашний день, неделю и т.д.
+     *
+     */
 
     private boolean checkSort(@NonNull java.util.Calendar calendarNow, java.util.Calendar calendarEnd, int day, int month, int year){
         if (calendarEnd.get(java.util.Calendar.DAY_OF_MONTH) - calendarNow.get(java.util.Calendar.DAY_OF_MONTH)  == day
@@ -181,23 +198,30 @@ public class Main extends AppCompatActivity {
         });
     }
 
-    private void mainToSeeStatistics(){
-        Intent changeMain = new Intent(Main.this,Statistics.class);
+    private void changeView(Class needClass,String nameArray){
+        Intent changeMain = new Intent(Main.this,needClass);
         Bundle bundle = new Bundle();
-        bundle.putParcelableArrayList("Tasks",TasksUser);
+        bundle.putParcelableArrayList(nameArray,TasksUser);
         changeMain.putExtras(bundle);
         startActivity(changeMain);
+
+    }
+
+    private void mainToSeeStatistics(){
+        changeView(Statistics.class,"Tasks");
     }
 
     public void onClickCalendarMode(View view)
     {
-        Intent intentCalendarMode = new Intent(Main.this, ViewCalendar.class);
-        Bundle bundle = new Bundle();
-        bundle.putParcelableArrayList("com/example/test/Task",TasksUser);
-        intentCalendarMode.putExtras(bundle);
-        startActivity(intentCalendarMode);
+        changeView(View.class,"com/example/test/Task");
     }
 
+
+    /**
+     *
+     * Если пользователь зажал на данный таск вытащиться сообщение о том хочет ли пользователь удалить данный таск
+     *
+     */
     private void eventTaskListViewLongClick()
     {
         AlertDialog.Builder alertDialogDel = new AlertDialog.Builder(Main.this);
@@ -222,6 +246,11 @@ public class Main extends AppCompatActivity {
         });
     }
 
+    /**
+     *
+     * Иницилизация кнопок и много чего ещё
+     *
+     */
     private void init()
     {
         command = "allTasks";
@@ -267,6 +296,12 @@ public class Main extends AppCompatActivity {
         }
     }
 
+
+    /**
+     *
+     * Данная фича не используется, данная фича описана в классе ServiceNotificationRemember.java
+     *
+     */
     private void initThread(){
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
@@ -280,6 +315,8 @@ public class Main extends AppCompatActivity {
     }
 
 
+    //Отображаем задачки
+
     private void initListTasks()
     {
         ActionTask Task = new ActionTask();
@@ -291,6 +328,8 @@ public class Main extends AppCompatActivity {
         TasksUser = User.getTasksResult(Task.GetAllTasks(),TasksUser);
     }
 
+
+    //Обновляем задачки
     private void refreshListTask(){
         try {
             ActionTask Task = new ActionTask();
@@ -324,7 +363,7 @@ public class Main extends AppCompatActivity {
     }
 
 
-
+    //Если пользователь решился все таки удалить задачки
     public void DeleteTask(int position){
         ActionTask Task = new ActionTask();
         if ("succ".equals(Task.DeleteTaskResult(TasksUser,position)))
@@ -339,7 +378,7 @@ public class Main extends AppCompatActivity {
 
 
 
-
+    //Хочет посмотреть на данную задачку
     private void setEventItemClick()
     {
         ViewTasks.setOnItemClickListener(new AdapterView.OnItemClickListener() {

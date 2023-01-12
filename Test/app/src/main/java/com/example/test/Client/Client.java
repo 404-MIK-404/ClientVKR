@@ -19,6 +19,16 @@ import org.java_websocket.drafts.Draft_6455;
 import org.java_websocket.handshake.ServerHandshake;
 import org.json.*;
 
+/**
+ *
+ *
+ * Этот класс был сделан как синглтон, но через enum, тип его проще так было сделать, но лучше я бы сделал его как обычным классом
+ * Здесь создан внутрений класс как Web Socket Client.
+ * Данный класс отвечает за доставку и отправку всего этого клиенту.
+ *
+ *
+ */
+
 public enum Client {
 
     UserAndroid  {

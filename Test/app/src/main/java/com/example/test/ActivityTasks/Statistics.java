@@ -24,6 +24,13 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
+
+/***
+ *
+ * Здесь идёт чистый просмотр статистики.
+ *
+ */
+
 public class Statistics extends AppCompatActivity {
 
     private final Client User = Client.UserAndroid;
@@ -121,8 +128,8 @@ public class Statistics extends AppCompatActivity {
         ArrayList<PieEntry> pieEntries = new ArrayList<>();
 
         Map<String, Integer> typeAmountMap = new HashMap<>();
-        typeAmountMap.put("Отмеченные задачи",countTaskDone);
-        typeAmountMap.put("Не отмеченные задачи",coutTaskNotDone);
+        typeAmountMap.put("Сделанные задачи",countTaskDone);
+        typeAmountMap.put("Не сделанные задачи",coutTaskNotDone);
 
         ArrayList<Integer> colors = new ArrayList<>();
         colors.add(Color.parseColor("#304567"));
