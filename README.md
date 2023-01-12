@@ -96,4 +96,5 @@
 
 В будущем, данный проект будет переделан не только с точки зрения программного кода, но из точки зрения интерфейса.
 Будет браться пример от данного автора: https://www.figma.com/file/2ObbSxiIWD8c84bczlZVhP/Note-App%3A-HaBIT-Note-UI-Screen-(Community)?t=b27GXO7Am0PioaW4-0
+
 Или хотя бы попытаюсь :D
